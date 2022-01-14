@@ -25,11 +25,11 @@ public class Building {
         this.numOfResidents= numOfResidents;
     }
 
-    public void addResident(int numOfResidents){
+    public void addResident(){
         numOfResidents++;
     }
 
-    public void removeResident(int numOfResidents){
+    public void removeResident(){
         numOfResidents--;
     }
 }
