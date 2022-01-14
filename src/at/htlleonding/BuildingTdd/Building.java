@@ -11,25 +11,30 @@
 package at.htlleonding.BuildingTdd;
 
 public class Building {
-    private Integer id;
-    public int numOfResidents = 0;
+    public String _nameOfResident;
+    private Integer _id;
+    public int _numOfResidents = 0;
 
 
     public int getNumOfResidents() {
-        return numOfResidents;
+        return _numOfResidents;
     }
 
-    public Building(Integer id, int numOfResidents){
-        this.id = id;
+    public Building(Integer id, String nameOfResident){
+        _id = id;
 
-        this.numOfResidents= numOfResidents;
+        _nameOfResident = nameOfResident;
     }
+
+
+
+
 
     public void addResident(){
-        numOfResidents++;
+        _numOfResidents++;
     }
 
     public void removeResident(){
-        numOfResidents--;
+        _numOfResidents--;
     }
 }
