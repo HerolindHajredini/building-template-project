@@ -22,5 +22,11 @@ class BuildingTest {
         assertEquals(1, building.getNumOfResidents());
     }
 
+    @Test
+    void getNumOfResidentsShouldReturn1_afterRemoving1Resident(){
+        Building building = new Building(16, 2);
 
+        building.removeResident();
+        assertEquals(1, building.getNumOfResidents());
+    }
 }
