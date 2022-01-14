@@ -12,6 +12,7 @@ package at.htlleonding.BuildingTdd;
 
 public class Building {
     public String _nameOfResident;
+    public String[] _nameOfResidentArray;
     private Integer _id;
     public int _numOfResidents = 0;
 
@@ -20,10 +21,20 @@ public class Building {
         return _numOfResidents;
     }
 
-    public Building(Integer id, String nameOfResident){
+    public Building(Integer id, String[] nameOfResident){
         _id = id;
 
-        _nameOfResident = nameOfResident;
+        if(_numOfResidents == 1)
+        {
+            _nameOfResident = nameOfResident[0];
+        }
+        else if(_numOfResidents > 1)
+        {
+            for(int i = 0; i < _numOfResidents; i++)
+            {
+                this._nameOfResidentArray[0] = nameOfResident[0];
+            }
+        }
     }
 
 
